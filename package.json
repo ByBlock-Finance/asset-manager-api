@@ -1,0 +1,21 @@
+{
+    "name": "byblock-accounting-api",
+    "version": "0.0.4",
+    "scripts": {
+        "start": "npx functions-framework --target=api --port=9090",
+        "deploy": "gcloud functions deploy api --runtime nodejs14 --trigger-http --allow-unauthenticated --region europe-central2"
+    },
+    "dependencies": {
+        "async-redis": "^2.0.0",
+        "axios": "^0.23.0",
+        "dayjs": "^1.10.7",
+        "redis": "^3.1.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "firebase-admin": "^10.0.0",
+        "bcrypt": "^5.0.1"
+    },
+    "devDependencies": {
+        "@google-cloud/functions-framework": "^1.9.0"
+    }
+}
